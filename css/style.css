@@ -496,12 +496,15 @@ h6 {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    border-bottom: 1px solid #eee;
   }
 
   .menu__item a {
     color: #4CA2E5;
-    font-size: 34px;
-    line-height: calc(50/28);
+    width: 100%;
+    text-align: right;
+    font-size: 24px;
+    line-height: 50px;
   }
 
   .main {
