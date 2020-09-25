@@ -23,7 +23,11 @@ function ibg(){
 ibg();
 $(document).ready(function(){
 	$('.menu__burger').click(function(){
-		$('.menu__burger, .menu__body').toggleClass('_active');
+		$('.menu__burger, .menu__body, .menu__area').toggleClass('_active');
 		$('body').toggleClass('_lock')
+	})
+	$('.menu__area, .menu__ba').click(function(){
+		$('.menu__burger, .menu__body, .menu__area').removeClass('_active')
+		$('body').removeClass('_lock')
 	})
 })
