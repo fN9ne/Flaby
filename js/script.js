@@ -31,3 +31,19 @@ $(document).ready(function(){
 		$('body').removeClass('_lock')
 	})
 })
+$(document).ready(function(){
+	$('.slider-feedback').slick({
+		arrows: true,
+		appendArrows: $('.feedback__arrows'),
+		infinite: false,
+		speed: 1000,
+	});
+	let plan = $('.plan');
+	let priceColumn = '.price__column';
+	plan.mouseover(function(){
+		$(this).closest(priceColumn).addClass('_active');
+	});
+	plan.mouseleave(function(){
+		$(this).closest(priceColumn).removeClass('_active');
+	});
+})
